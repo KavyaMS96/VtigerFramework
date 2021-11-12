@@ -32,10 +32,10 @@ public class BaseClass {
 		System.out.println("=====DB Connection Successfully=====");
 		dbLib.connectDB();
 	}
-	@Parameters(value ="BROWSER")
+	//@Parameters(value ="BROWSER")
 	@BeforeClass(groups= {"smokeTest","regressionTest"})
-	public void launchBrowser(String BROWSER) throws Throwable {
-		//String BROWSER= fLib.getPropertyData("browser");
+	public void launchBrowser() throws Throwable {
+		String BROWSER= fLib.getPropertyData("browser");
 		String URL=fLib.getPropertyData("url");
 		//step1: Launch Browser
 				if(BROWSER.equals("chrome")) {
