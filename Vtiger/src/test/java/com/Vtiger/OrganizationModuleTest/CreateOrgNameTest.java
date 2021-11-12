@@ -9,7 +9,6 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.Test;
 
 import com.Vtiger.GenericUtility.BaseClass;
-import com.Vtiger.GenericUtility.ExcelUtility;
 import com.Vtiger.GenericUtility.FileUtility;
 import com.Vtiger.GenericUtility.JavaUtility;
 import com.Vtiger.GenericUtility.WebDriverUtility;
@@ -39,12 +38,12 @@ public class CreateOrgNameTest extends BaseClass {
 		cNeworg.getAccountname().sendKeys(OrgName);
 		cNeworg.getSave().click();
 		
-		//Step 5: Verify
+		//Step 5: VerifyZ
 		String ActualText= org.getActualTitleText().getText();
 		
 		if(ActualText.contains(OrgName)) {
 			System.out.println("Organization matched successfully");
-			eLib.writeExcelData("OrgName", 1, 4, "PASS");
+			//eLib.writeExcelData("OrgName", 1, 4, "PASS");
 		}
 		else {
 			System.out.println("Organization not matched successfully");
@@ -54,7 +53,7 @@ public class CreateOrgNameTest extends BaseClass {
 	
 	
 	
-	/*@Test
+	@Test
 	public void CreateOrgNameWithIndustryWithType() throws Throwable {
 		String OrgName = eLib.getExcelData("OrgName", 1, 1)+ "_" + jLib.getRandomData();
 		String IndName = eLib.getExcelData("OrgName", 1, 2);
@@ -87,6 +86,6 @@ public class CreateOrgNameTest extends BaseClass {
 		}
 		
 		System.out.println("Create OrgNameWithIndustryWithTypeTest Executed");
-	}*/
+	}
 
 }

@@ -64,7 +64,7 @@ public class CreateContactNameTest extends BaseClass {
 						
 	}
 	
-	/*@Test(groups={"regressionTest"})
+	@Test(groups={"regressionTest"})
 	public void createContactNameWithOrgTest() throws Throwable {
 		
 		//Step3: Getting Data from Excel.
@@ -115,7 +115,7 @@ public class CreateContactNameTest extends BaseClass {
 				System.out.println("Switched to parent window");
 				cNewCont.getSave().click();
 				System.out.println("Create ContactNameWithOrgTest Executed");
-	}*/
+	}
 	
 	@Test
 	public void CreateLeadTest() {
