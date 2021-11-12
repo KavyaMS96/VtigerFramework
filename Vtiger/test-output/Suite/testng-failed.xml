@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="TestRunner-1(failed)">
+    <classes>
+      <class name="com.Vtiger.ContactModuleTest.CreateContactNameTest">
+        <methods>
+          <include name="CloseDB"/>
+          <include name="launchBrowser"/>
+          <include name="logoutOffApp"/>
+          <include name="connectDB"/>
+          <include name="CloseBrowser"/>
+          <include name="createContactNameTest"/>
+          <include name="loginToApp"/>
+        </methods>
+      </class> <!-- com.Vtiger.ContactModuleTest.CreateContactNameTest -->
+    </classes>
+  </test> <!-- TestRunner-1(failed) -->
+  <test thread-count="5" parallel="tests" name="TestRunner-2(failed)">
+    <classes>
+      <class name="com.Vtiger.OrganizationModuleTest.CreateOrgNameTest">
+        <methods>
+          <include name="CreateOrgNameTest"/>
+          <include name="CloseDB"/>
+          <include name="launchBrowser"/>
+          <include name="logoutOffApp"/>
+          <include name="connectDB"/>
+          <include name="CloseBrowser"/>
+          <include name="loginToApp"/>
+        </methods>
+      </class> <!-- com.Vtiger.OrganizationModuleTest.CreateOrgNameTest -->
+    </classes>
+  </test> <!-- TestRunner-2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
